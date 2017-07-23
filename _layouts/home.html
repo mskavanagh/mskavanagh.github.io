@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-us">
   
+  <!-- Using the Head document -->
   {% include head.html %}
   
   <body>
+    
+  <!-- Inserts the Header -->
     {% include page-header.html %}
 
     <!-- Sidebar -->
@@ -21,8 +24,7 @@ radplayer('color2', '#ffffff');
 </div>
     <!-- End Sidebar -->
 
-    
-
+    <!-- Main Stuff -->
 <section class="main-content" align="center">  
       <p align="center">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/W-IFTVrYAs0?ecver=1" frameborder="0" allowfullscreen></iframe>
@@ -36,7 +38,11 @@ radplayer('color2', '#ffffff');
       </p>
         {{ content }}
     </section>
+    
+    <!-- End Main Stuff -->
 
+    <!-- Inserts the Footer -->
     {% include page-footer.html %}
+    
   </body>
 </html>
