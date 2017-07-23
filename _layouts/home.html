@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  
+  {% include head.html %}
+
+  <body>
+    {% include page-header.html %}
+
+    <section class="main-content">
+      <h2>Posts</h2>
+      <ul>
+        {% for post in site.posts %}
+        <li>          
+          <a href="{{ post.url | prepend: site.baseurl}}">
+            {{ post.title }}
+          </a>
+        </li>
+        {% endfor %}
+
+    </section>
+    {% include page-footer.html %}
+  </body>
+</html>
