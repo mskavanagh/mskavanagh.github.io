@@ -1,6 +1,5 @@
 ## Welcome to GitHub Pages
 
-This is not a blog and I dunno what kind of horescrap github is trying to pull here
 
 You can use the [editor on GitHub](https://github.com/mskavanagh/mskavanagh.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
