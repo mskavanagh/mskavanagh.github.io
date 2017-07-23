@@ -7,16 +7,8 @@
     {% include page-header.html %}
 
     <section class="main-content">
-      <h2>Posts</h2>
-      <ul>
-        {% for post in site.posts %}
-        <li>          
-          <a href="{{ post.url | prepend: site.baseurl}}">
-            {{ post.title }}
-          </a>
-        </li>
-        {% endfor %}
-{{ content }}
+      <h2>Updates</h2>
+        {{ content }}
     </section>
     {% include page-footer.html %}
   </body>
