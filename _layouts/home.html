@@ -7,7 +7,16 @@
     {% include page-header.html %}
 
     <section class="main-content">
-      <h2>There'll be updates here whenever I wrap my head around this confusing mess people call Github</h2>
+      <h2>Butts</h2>
+          <ul>
+       {% for post in site.posts %}
+       <li>          
+         <a href="{{ post.url | prepend: site.baseurl}}">
+            {{ post.title }}
+          </a>
+       </li>
+        {% endfor %}
+      
         {{ content }}
     </section>
     {% include page-footer.html %}
