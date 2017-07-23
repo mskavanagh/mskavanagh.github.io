@@ -1,7 +1,39 @@
 ---
-# layout: default
+# Layout commented out for now.
+# layout: home
 ---
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
+
+{% comment %}
+
+Content is where the actual substance of the post will be rendered.
+
+So if you have a markdown file that says "layout: post" in its frontmatter, the
+first thing that will happen is it will replace the tag below with its processed
+HTML.
+
+But--if the layout file *also* has a layout tag in *its* frontmatter, then
+everything that gets put together here ends up inside the content tag of
+whatever layout it invoked.
+
+So for example, if you have a post markdown file, and the post layout file uses
+the home layout, it goes:
+
+<HomeLayout>
+
+  <PostLayout>
+
+    <Post />
+
+  </PostLayout>
+
+</HomeLayout>
+
+You can make up your own layouts though, and as long as they exist, Jekyll will
+show whatever is specified in a layout. Not everything has to telescope all the
+way back to the layout of the landing page, basically.
+
+{% endcomment %}
 
 {{ content }}
